@@ -1,0 +1,7 @@
+pageobjectrepository\LoginPage.class
+resources\CommonLib.class
+pageobjectrepository\HomePage.class
+resources\ExtentReportersNG.class
+Framework\E2Eproject\App.class
+resources\Driver.class
+pageobjectrepository\ForgotPasswordPage.class

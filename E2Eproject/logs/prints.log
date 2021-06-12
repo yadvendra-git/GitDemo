@@ -1,0 +1,4 @@
+09:08:54.797 [main] INFO  Framework.E2Eproject.Login - driver is initiliazed
+09:09:03.107 [main] INFO  Framework.E2Eproject.Login - Non restricted user
+09:09:06.907 [main] INFO  Framework.E2Eproject.Login - restricted user
+09:09:15.993 [main] INFO  Framework.E2Eproject.Login - Navigation bar is displayed

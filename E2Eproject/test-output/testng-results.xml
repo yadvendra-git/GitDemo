@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25360" started-at="2021-06-07T09:08:51 IST" finished-at="2021-06-07T09:09:16 IST">
+    <groups>
+    </groups>
+    <test name="validating login information" duration-ms="15817" started-at="2021-06-07T09:08:51 IST" finished-at="2021-06-07T09:09:07 IST">
+      <class name="Framework.E2Eproject.Login">
+        <test-method status="PASS" signature="initializeTest()[pri:0, instance:Framework.E2Eproject.Login@4149c063]" name="initializeTest" is-config="true" duration-ms="3608" started-at="2021-06-07T09:08:51 IST" finished-at="2021-06-07T09:08:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Framework.E2Eproject.Login@4149c063]" name="loginTest" duration-ms="8105" started-at="2021-06-07T09:08:55 IST" data-provider="getloginData" finished-at="2021-06-07T09:09:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nonrestrict123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Framework.E2Eproject.Login@4149c063]" name="loginTest" duration-ms="3782" started-at="2021-06-07T09:09:03 IST" data-provider="getloginData" finished-at="2021-06-07T09:09:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[restrict123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Framework.E2Eproject.Login@4149c063]" name="tearDown" is-config="true" duration-ms="191" started-at="2021-06-07T09:09:06 IST" finished-at="2021-06-07T09:09:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Framework.E2Eproject.Login -->
+    </test> <!-- validating login information -->
+    <test name="validating tiltle and nav bar in the page" duration-ms="8634" started-at="2021-06-07T09:09:08 IST" finished-at="2021-06-07T09:09:16 IST">
+      <class name="Framework.E2Eproject.ValidateTitle">
+        <test-method status="PASS" signature="initializeTest()[pri:0, instance:Framework.E2Eproject.ValidateTitle@19b843ba]" name="initializeTest" is-config="true" duration-ms="7881" started-at="2021-06-07T09:09:08 IST" finished-at="2021-06-07T09:09:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTest -->
+        <test-method status="PASS" signature="valNavBar()[pri:0, instance:Framework.E2Eproject.ValidateTitle@19b843ba]" name="valNavBar" duration-ms="90" started-at="2021-06-07T09:09:15 IST" finished-at="2021-06-07T09:09:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valNavBar -->
+        <test-method status="FAIL" signature="valTitle()[pri:0, instance:Framework.E2Eproject.ValidateTitle@19b843ba]" name="valTitle" duration-ms="42" started-at="2021-06-07T09:09:15 IST" finished-at="2021-06-07T09:09:16 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COSES] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COSES] but found [FEATURED COURSES]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Framework.E2Eproject.ValidateTitle.valTitle(ValidateTitle.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Framework.E2Eproject.ValidateTitle@19b843ba]" name="tearDown" is-config="true" duration-ms="141" started-at="2021-06-07T09:09:16 IST" finished-at="2021-06-07T09:09:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Framework.E2Eproject.ValidateTitle -->
+    </test> <!-- validating tiltle and nav bar in the page -->
+  </suite> <!-- Suite -->
+</testng-results>
