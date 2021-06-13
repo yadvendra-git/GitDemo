@@ -59,6 +59,8 @@ public class ValidateTitle extends Driver{
 	public void tearDown()
 	{
 		driver.close();
-		System.out.println(This is branch level changes to branch B);
+		System.out.println("This is branch level changes to branch B");
+		System.out.println("Final changes to branch B");
+		
 	}
 }
