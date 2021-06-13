@@ -47,6 +47,8 @@ public class ValidateTitle extends Driver{
 	boolean value=hm.getNavBar().isDisplayed();
 	log.info("Navigation bar is displayed");
 	Assert.assertTrue(value, "Navigation bar is not displayed");
+	System.out.println("i have made this change-1");
+	System.out.println("i have made this change-2");
 	
 		
 		
