@@ -49,6 +49,8 @@ public class ValidateTitle extends Driver{
 	Assert.assertTrue(value, "Navigation bar is not displayed");
 	System.out.println("i have made this change-1");
 	System.out.println("i have made this change-2");
+	System.out.println("i have made this change-3");
+	System.out.println("i have made this change-4");
 	
 		
 		
